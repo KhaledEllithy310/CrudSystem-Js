@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session JS</title>
+    <!-- Bootstrap Version 4.3.1 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <!-- code start -->
+    <section class="input__field my-2">
+      <div class="container">
+        <h1 class="system__title">Crud System</h1>
+        <form>
+          <div class="field my-2">
+          <label for="productName">product Name</label>
+          <input
+            id="productName"
+            class="form-control mt-1"
+            type="text"
+            placeholder="Enter Prodcut Name"
+          />
+        </div>
+        <div class="field my-2">
+          <label for="productPrice">product price</label>
+          <input
+            id="productPrice"
+            class="form-control mt-1"
+            type="number"
+            placeholder="Enter Prodcut Price"
+          />
+        </div>
+        <div class="field my-2">
+          <label for="productCategory">product Category</label>
+          <input
+            id="productCategory"
+            class="form-control mt-1"
+            type="text"
+            placeholder="Enter Prodcut Category"
+          />
+        </div>
+        <div class="field my-2">
+          <label for="productDesc">product Description</label>
+          <input
+            id="productDesc"
+            class="form-control mt-1"
+            type="text"
+            placeholder="Enter Prodcut Description"
+          />
+        </div>
+        <div class="field my-2">
+          <label for="productCount">product Count</label>
+          <input
+            id="productCount"
+            class="form-control mt-1"
+            type="number"
+            placeholder="Enter Prodcut Counter"
+          />
+        </div>
+        <div class="field my-2 text-center my-4">
+          <label for="productSearch" class="mb-2">Product Search</label>
+          <input
+            type="text"
+            id="productSearch"
+            class="form-control mt-1 w-50 m-auto"
+            placeholder="Search"
+          />
+        </div>
+        </form>
+        <div class="my-3">
+          <button class="btn btn-primary" id="addButton">Add Proudct</button>
+          <button class="btn btn-danger" id="deleteAll">Delete All Orders</button>
+        </div>
+        <div class="output__field my-2 py-5">
+          <table class="table table-bordered text-center">
+            <thead class="text-white bg-dark">
+              <th>Index</th>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Price per one</th>
+              <th>final Price</th>
+              <th>Category</th>
+              <th>Description</th>
+              <th>count</th>
+              <th>Delete Product</th>
+              <th>Update Product</th>
+            </thead>
+            <tbody id="tBody"></tbody>
+            <tfoot id="tFoot" class="text-center">
+              <tr>
+                <td>Total</td>
+                <td id="total" colspan="9" class="fs-3 fw-bold"></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- code end -->
+    <!-- Javascript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
